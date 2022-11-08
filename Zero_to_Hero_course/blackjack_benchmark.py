@@ -63,7 +63,7 @@ class Player():
                     print(f"{self.name} doesn't have enough chips for that bet!")
                 elif bet in range(0,self.chips):
                     self.chips -= num_chips
-                    print(f"{self.name} placed a bet of {bet} chips.")
+                    print(f"{self.name} placed a bet of {num_chips} chips.")
                     return num_chips
             except: # Make sure the input is an integer and that there are enough chips to place the bet.
                 print("Bet must be a number!")
